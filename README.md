@@ -1,8 +1,9 @@
 ## Website Performance Optimization portfolio project
 
 This is my 6th project in the Udacity Front-End Web Developer Nanodegree Program.
+
 The goal of this project is:
-- Optimize `index.html` to score a speed above 90 for mobile and Desktop
+- Optimize `index.html` to score a speed above 90 for mobile and Desktop.
 - Optimize `views/js/main.js` to make `views/pizza.html` render with a consistent frame-rate at 60fps when scrolling.
 
 ### Getting started
