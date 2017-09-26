@@ -481,8 +481,8 @@ function updatePositions() {
 		phase.push(Math.sin(topScroll + i));
 	}
 
-	for (var i = 0; i < pizzaOnScreen; i++) {
-		items[i].style.left = items[i].basicLeft + 100 * phase[i % 5] + 'px';
+	for (var p = 0; p < pizzaOnScreen; p++) {
+		items[p].style.left = items[p].basicLeft + 100 * phase[p % 5] + 'px';
 	}
 	// User Timing API to the rescue again. Seriously, it's worth learning.
 	// Super easy to create custom metrics.
