@@ -405,13 +405,13 @@ var resizePizzas = function (size) {
 	function changeSliderLabel(size) {
 		switch (size) {
 			case "1":
-				document.querySelector("#pizzaSize").innerHTML = "Small";
+				document.getElementById("pizzaSize").innerHTML = "Small";
 				return 25;
 			case "2":
-				document.querySelector("#pizzaSize").innerHTML = "Medium";
+				document.getElementById("pizzaSize").innerHTML = "Medium";
 				return 33.3;
 			case "3":
-				document.querySelector("#pizzaSize").innerHTML = "Large";
+				document.getElementById("pizzaSize").innerHTML = "Large";
 				return 50;
 			default:
 				console.log("bug in changeSliderLabel");
@@ -508,8 +508,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	var rows = Math.floor(height / s) + 1;
 	var cols = Math.floor(width / s) + 1;
 	pizzaOnScreen = cols * rows; // number of pizza to fill the screen
+	var elem; // creating elem variable outside loop
 	for (var i = 0; i < pizzaOnScreen; i++) {
-		var elem = document.createElement('img');
+		elem = document.createElement('img');
 		elem.className = 'mover';
 		elem.src = "images/pizza.png";
 		elem.style.height = "100px";
